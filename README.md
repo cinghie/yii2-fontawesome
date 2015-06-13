@@ -1,5 +1,5 @@
 # Yii2 Font Awesome
-Asset Bundle to include Font Awesome on your Yii 2 project:
+Asset Bundle to include Font Awesome on your Yii 2 project:<br>
 https://github.com/FortAwesome/Font-Awesome
 
 Installation
