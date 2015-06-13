@@ -18,3 +18,14 @@ or add this line to the require section of your `composer.json` file.
 ```
 "cinghie/yii2-fontawesome": "*"
 ```
+
+Configuration
+-----------------
+
+Add in the view
+
+```
+use cinghie\fontawesome\AssetBundle;
+
+AssetBundle::register($this);
+```
