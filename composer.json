@@ -1,0 +1,24 @@
+{
+    "name": "cinghie/yii2fontawesome",
+    "description": "Asset Bundle to include Font Awesome on your Yii 2 project",
+    "keywords": ["yii2", "yii2 font awesome", "Font Awesome", "fontawesome", "font awesome"],
+    "homepage": "https://github.com/cinghie/yii2-fontawesome",
+    "type": "yii2-extension",
+    "license": "BSD 3-Clause",
+    "authors": [
+        {
+            "name": "Gogodigital.it",
+            "email": "info@gogodigital.it",
+            "homepage": "http://www.gogodigital.it/"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+		"FortAwesome/Font-Awesome": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "cinghie\\fontawesome\\": ""
+        }
+    }
+}
