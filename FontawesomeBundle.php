@@ -16,7 +16,7 @@ namespace cinghie\fontawesome;
  * Class AssetBundle
  * @package cinghie\fontawesome
  */
-class AssetBundle extends \yii\web\AssetBundle
+class FontawesomeBundle extends \yii\web\AssetBundle
 {
 
     /**

@@ -25,7 +25,7 @@ Configuration
 Add in the view
 
 ```
-use cinghie\fontawesome\AssetBundle;
+use cinghie\fontawesome\FontawesomeBundle;
 
-AssetBundle::register($this);
+FontawesomeBundle::register($this);
 ```
