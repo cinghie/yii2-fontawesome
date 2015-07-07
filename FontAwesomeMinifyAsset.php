@@ -16,7 +16,7 @@ namespace cinghie\fontawesome;
  * Class FontAwesomeAsset
  * @package cinghie\fontawesome
  */
-class FontAwesomeAsset extends \yii\web\AssetBundle
+class FontAwesomeMinifyAsset extends \yii\web\AssetBundle
 {
 
     /**
@@ -28,7 +28,7 @@ class FontAwesomeAsset extends \yii\web\AssetBundle
      * @inherit
      */
     public $css = [
-        'css/font-awesome.css',
+        'css/font-awesome.min.css',
     ];
 
     /**

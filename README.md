@@ -34,8 +34,9 @@ Changelog
 -----------------
 
 <ul>
+  <li>Version 1.2.0 - Separating normal and minified CSS</li>
   <li>Version 1.1.1 - Updated Version</li>
-  <li>Version 1.1 - Changed Bundle Name</li>
+  <li>Version 1.1.0 - Changed Bundle Name</li>
   <li>Version 1.0.1 - Update Composer</li>
   <li>Version 1.0 - Initial Release</li>
 </ul>
