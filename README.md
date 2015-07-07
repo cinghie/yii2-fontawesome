@@ -22,12 +22,20 @@ or add this line to the require section of your `composer.json` file.
 Configuration
 -----------------
 
-Add in the view
+Add in the view for normal CSS and JS
 
 ```
 use cinghie\fontawesome\FontAwesomeAsset;
 
 FontAwesomeAsset::register($this);
+```
+
+Add in the view for minify CSS and JS
+
+```
+use cinghie\fontawesome\FontAwesomeMinifyAsset;
+
+FontAwesomeMinifyAsset::register($this);
 ```
 
 Changelog
