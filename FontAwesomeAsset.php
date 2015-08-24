@@ -30,6 +30,14 @@ class FontAwesomeAsset extends \yii\web\AssetBundle
     public $css = [
         'css/font-awesome.css',
     ];
+    
+    /**
+     * @inherit
+     */
+    public $depends = [
+        'yii\web\YiiAsset',
+        'yii\bootstrap\BootstrapAsset',
+    ];
 
     /**
      * Initializes the bundle
