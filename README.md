@@ -42,6 +42,7 @@ Changelog
 -----------------
 
 <ul>
+  <li>Version 1.2.1 - Adding Bootstrap Depends</li>
   <li>Version 1.2.0 - Separating normal and minified CSS</li>
   <li>Version 1.1.1 - Updated Version</li>
   <li>Version 1.1.0 - Changed Bundle Name</li>
