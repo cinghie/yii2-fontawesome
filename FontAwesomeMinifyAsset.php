@@ -7,7 +7,7 @@
 * @github https://github.com/cinghie/yii2-fontawesome
 * @license GNU GENERAL PUBLIC LICENSE VERSION 3
 * @package yii2-fontawesome
-* @version 1.2.0
+* @version 1.2.1
 */
 
 namespace cinghie\fontawesome;
@@ -29,6 +29,14 @@ class FontAwesomeMinifyAsset extends \yii\web\AssetBundle
      */
     public $css = [
         'css/font-awesome.min.css',
+    ];
+    
+    /**
+     * @inherit
+     */
+    public $depends = [
+        'yii\web\YiiAsset',
+        'yii\bootstrap\BootstrapAsset',
     ];
 
     /**
