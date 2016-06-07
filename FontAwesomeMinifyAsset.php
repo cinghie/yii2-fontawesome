@@ -12,11 +12,13 @@
 
 namespace cinghie\fontawesome;
 
+use yii\web\AssetBundle;
+
 /**
  * Class FontAwesomeAsset
  * @package cinghie\fontawesome
  */
-class FontAwesomeMinifyAsset extends \yii\web\AssetBundle
+class FontAwesomeMinifyAsset extends AssetBundle
 {
 
     /**
