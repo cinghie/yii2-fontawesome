@@ -42,6 +42,7 @@ Changelog
 -----------------
 
 <ul>
+  <li>Version 1.3.0 - Update composer require</li>
   <li>Version 1.2.1 - Adding Bootstrap Depends</li>
   <li>Version 1.2.0 - Separating normal and minified CSS</li>
   <li>Version 1.1.1 - Updated Version</li>
