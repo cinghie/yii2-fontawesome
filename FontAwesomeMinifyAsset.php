@@ -30,7 +30,7 @@ class FontAwesomeMinifyAsset extends AssetBundle
      * @inherit
      */
     public $css = [
-        'css/font-awesome.min.css'
+	    'web-fonts-with-css/css/fontawesome.min.css'
     ];
     
     /**
@@ -53,4 +53,5 @@ class FontAwesomeMinifyAsset extends AssetBundle
             return preg_match('%(/|\\\\)(fonts|css)%', $from);
         };
     }
+    
 }

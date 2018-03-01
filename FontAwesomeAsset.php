@@ -24,13 +24,13 @@ class FontAwesomeAsset extends AssetBundle
     /**
      * @inherit
      */
-    public $sourcePath = '@bower/fontawesome';
+	public $sourcePath = '@bower/fontawesome';
 
     /**
      * @inherit
      */
     public $css = [
-        'css/font-awesome.css'
+        'web-fonts-with-css/css/fontawesome.css'
     ];
     
     /**
@@ -53,4 +53,5 @@ class FontAwesomeAsset extends AssetBundle
             return preg_match('%(/|\\\\)(fonts|css)%', $from);
         };
     }
+
 }
