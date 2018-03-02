@@ -42,13 +42,14 @@ Versioning
 -----------------
 
 From version 1.4.0 implementing Fontawesome 5  
-Last version with Fontawesome 4 is 1.3.1
+Last version with Fontawesome 4 is 1.3.2
 
 Changelog
 -----------------
 
 <ul>
   <li>Version 1.4.0 - Implements Fontawesome 5</li> 
+  <li>Version 1.3.2 - Update composer require</li>
   <li>Version 1.3.1 - Purge code</li>  
   <li>Version 1.3.0 - Update composer require</li>
   <li>Version 1.2.1 - Adding Bootstrap Depends</li>
