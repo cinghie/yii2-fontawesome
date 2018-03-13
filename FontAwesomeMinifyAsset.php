@@ -24,7 +24,7 @@ class FontAwesomeMinifyAsset extends AssetBundle
     /**
      * @inherit
      */
-	public $sourcePath = '@vendor/fortawesome/font-awesome';
+    public $sourcePath = '@bower/fontawesome';
 
     /**
      * @inherit
