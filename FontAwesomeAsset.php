@@ -24,7 +24,7 @@ class FontAwesomeAsset extends AssetBundle
     /**
      * @inherit
      */
-    public $sourcePath = '@bower/fontawesome';
+    public $sourcePath = '@vendor/fortawesome/font-awesome';
 
     /**
      * @inherit
