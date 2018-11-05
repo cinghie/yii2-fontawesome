@@ -40,6 +40,5 @@ FontAwesomeMinifyAsset::register($this);
 Versioning
 -----------------
 
-From version 1.4.0 implementing Fontawesome 5  
-
-Last version with Fontawesome 4 is 1.3.2
+ - Fontawesome 5: from version 1.4.0  
+ - Fontawesome 4: last version with is Release 1.3.2
