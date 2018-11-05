@@ -13,9 +13,13 @@
 namespace cinghie\fontawesome;
 
 use yii\web\AssetBundle;
+use yii\web\YiiAsset;
+use yii\bootstrap\BootstrapAsset;
+use yii\bootstrap\BootstrapPluginAsset;
 
 /**
  * Class FontAwesomeAsset
+ *
  * @package cinghie\fontawesome
  */
 class FontAwesomeAsset extends AssetBundle
@@ -37,9 +41,9 @@ class FontAwesomeAsset extends AssetBundle
      * @inherit
      */
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
-        'yii\bootstrap\BootstrapPluginAsset'
+	    YiiAsset::class,
+	    BootstrapAsset::class,
+	    BootstrapPluginAsset::class
     ];
 
     /**
@@ -49,8 +53,9 @@ class FontAwesomeAsset extends AssetBundle
     {
         parent::init();
 
-        $this->publishOptions['beforeCopy'] = function ($from, $to) {
+        $this->publishOptions['beforeCopy'] = function ($from) {
             return preg_match('%(/|\\\\)(fonts|css)%', $from);
         };
     }
+
 }
