@@ -36,18 +36,3 @@ use cinghie\fontawesome\FontAwesomeMinifyAsset;
 
 FontAwesomeMinifyAsset::register($this);
 ```
-
-Changelog
------------------
-
-<ul>
-  <li>Version 1.3.2 - Update composer require</li>  
-  <li>Version 1.3.1 - Purge code</li>  
-  <li>Version 1.3.0 - Update composer require</li>
-  <li>Version 1.2.1 - Adding Bootstrap Depends</li>
-  <li>Version 1.2.0 - Separating normal and minified CSS</li>
-  <li>Version 1.1.1 - Updated Version</li>
-  <li>Version 1.1.0 - Changed Bundle Name</li>
-  <li>Version 1.0.1 - Update Composer</li>
-  <li>Version 1.0 - Initial Release</li>
-</ul>
