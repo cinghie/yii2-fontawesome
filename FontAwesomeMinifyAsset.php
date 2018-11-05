@@ -12,7 +12,10 @@
 
 namespace cinghie\fontawesome;
 
+use yii\bootstrap\BootstrapAsset;
+use yii\bootstrap\BootstrapPluginAsset;
 use yii\web\AssetBundle;
+use yii\web\YiiAsset;
 
 /**
  * Class FontAwesomeAsset
@@ -37,9 +40,9 @@ class FontAwesomeMinifyAsset extends AssetBundle
      * @inherit
      */
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
-        'yii\bootstrap\BootstrapPluginAsset'
+	    YiiAsset::class,
+	    BootstrapAsset::class,
+	    BootstrapPluginAsset::class
     ];
 
 }

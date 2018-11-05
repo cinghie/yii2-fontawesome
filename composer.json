@@ -20,7 +20,8 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "bower-asset/fontawesome": "5.*"
+        "bower-asset/fontawesome": "^5.0.0",
+        "roave/security-advisories": "dev-master"
     },
     "autoload": {
         "psr-4": {
