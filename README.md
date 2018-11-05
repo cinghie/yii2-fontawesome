@@ -1,6 +1,5 @@
 # Yii2 Font Awesome
-Asset Bundle to include Font Awesome on your Yii 2 project:<br>
-https://github.com/FortAwesome/Font-Awesome
+Asset Bundle to include Font Awesome on your Yii 2 project: https://github.com/FortAwesome/Font-Awesome
 
 Installation
 -----------------
@@ -42,20 +41,5 @@ Versioning
 -----------------
 
 From version 1.4.0 implementing Fontawesome 5  
+
 Last version with Fontawesome 4 is 1.3.2
-
-Changelog
------------------
-
-<ul>
-  <li>Version 1.4.0 - Implements Fontawesome 5</li> 
-  <li>Version 1.3.2 - Update composer require</li>
-  <li>Version 1.3.1 - Purge code</li>  
-  <li>Version 1.3.0 - Update composer require</li>
-  <li>Version 1.2.1 - Adding Bootstrap Depends</li>
-  <li>Version 1.2.0 - Separating normal and minified CSS</li>
-  <li>Version 1.1.1 - Updated Version</li>
-  <li>Version 1.1.0 - Changed Bundle Name</li>
-  <li>Version 1.0.1 - Update Composer</li>
-  <li>Version 1.0 - Initial Release</li>
-</ul>
