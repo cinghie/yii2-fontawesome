@@ -19,7 +19,7 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "*",
+        "yiisoft/yii2": "^2.0.15",
         "bower-asset/fontawesome": "^5.0.0",
         "roave/security-advisories": "dev-master"
     },
