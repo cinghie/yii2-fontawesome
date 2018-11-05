@@ -7,7 +7,7 @@
 * @github https://github.com/cinghie/yii2-fontawesome
 * @license GNU GENERAL PUBLIC LICENSE VERSION 3
 * @package yii2-fontawesome
-* @version 1.3.2
+* @version 1.3.3
 */
 
 namespace cinghie\fontawesome;
