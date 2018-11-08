@@ -41,4 +41,4 @@ Versioning
 -----------------
 
  - Fontawesome 5: from version Release 1.4.0  
- - Fontawesome 4: last version with is Release 1.3.3
+ - Fontawesome 4: last version Release 1.3.3
