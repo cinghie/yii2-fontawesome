@@ -13,9 +13,8 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "^2.0.15",
-        "bower-asset/fontawesome": "^4.7.0",
-        "roave/security-advisories": "dev-master"
+        "yiisoft/yii2": "^2.0.14",
+        "bower-asset/fontawesome": "^4.7.0"
     },
     "autoload": {
         "psr-4": {
