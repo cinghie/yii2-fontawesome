@@ -33,7 +33,7 @@ class FontAwesomeAsset extends AssetBundle
      * @inherit
      */
     public $css = [
-        'css/fontawesome.css'
+        'css/all.css'
     ];
     
     /**
