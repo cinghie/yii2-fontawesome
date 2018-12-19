@@ -33,7 +33,7 @@ class FontAwesomeMinifyAsset extends AssetBundle
      * @inherit
      */
     public $css = [
-	    'web-fonts-with-css/css/fontawesome-all.min.css'
+	    'css/fontawesome.min.css'
     ];
     
     /**
