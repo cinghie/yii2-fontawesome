@@ -16,13 +16,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require cinghie/yii2-fontawesome "^1.4.2"
+php composer.phar require cinghie/yii2-fontawesome "^1.4.3"
 ```
 
 or add this line to the require section of your `composer.json` file.
 
 ```
-"cinghie/yii2-fontawesome": "^1.4.2"
+"cinghie/yii2-fontawesome": "^1.4.3"
 ```
 
 Configuration
@@ -47,5 +47,5 @@ FontAwesomeMinifyAsset::register($this);
 Versioning
 -----------------
 
- - Fontawesome 5: from version Release 1.4.1  
+ - Fontawesome 5: from version Release 1.4.3  
  - Fontawesome 4: last version Release 1.3.4
