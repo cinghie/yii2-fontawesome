@@ -22,6 +22,9 @@
         "yiisoft/yii2": "^2.0.14",
         "bower-asset/fontawesome": "^5.15.4"
     },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "cinghie\\fontawesome\\": ""
