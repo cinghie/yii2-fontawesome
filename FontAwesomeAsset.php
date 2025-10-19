@@ -7,13 +7,11 @@
 * @github https://github.com/cinghie/yii2-fontawesome
 * @license BSD-3-Clause
 * @package yii2-fontawesome
-* @version 1.4.4
+* @version 1.4.5
 */
 
 namespace cinghie\fontawesome;
 
-use yii\bootstrap\BootstrapAsset;
-use yii\bootstrap\BootstrapPluginAsset;
 use yii\web\AssetBundle;
 use yii\web\YiiAsset;
 
@@ -39,7 +37,5 @@ class FontAwesomeAsset extends AssetBundle
      */
     public $depends = [
 	    YiiAsset::class,
-	    BootstrapAsset::class,
-	    BootstrapPluginAsset::class
     ];
 }
