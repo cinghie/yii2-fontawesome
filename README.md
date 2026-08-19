@@ -54,6 +54,6 @@ FontAwesomeMinifyAsset::register($this);
 
 ## Versioning
 
+- Font Awesome 6 is not part of the current compatibility contract and should be introduced only through a dedicated release
 - Font Awesome 5: from release 1.4.3
 - Font Awesome 4: last release 1.3.4
-- Font Awesome 6 is not part of the current compatibility contract and should be introduced only through a dedicated compatibility release.
