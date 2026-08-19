@@ -17,6 +17,7 @@ final class FontAwesomeAssetTest extends TestCase
 
         self::assertSame('@bower/fontawesome', $asset->sourcePath);
         self::assertSame(['css/all.css'], $asset->css);
+        self::assertSame([], $asset->depends);
     }
 
     public function testMinifiedAssetConfiguration(): void
@@ -25,6 +26,7 @@ final class FontAwesomeAssetTest extends TestCase
 
         self::assertSame('@bower/fontawesome', $asset->sourcePath);
         self::assertSame(['css/all.min.css'], $asset->css);
+        self::assertSame([], $asset->depends);
     }
 
     public function testFontAwesomeCssFilesExist(): void
