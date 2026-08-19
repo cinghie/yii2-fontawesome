@@ -12,30 +12,15 @@
 
 namespace cinghie\fontawesome;
 
-use yii\web\AssetBundle;
-use yii\web\YiiAsset;
-
 /**
- * Class FontAwesomeAsset
+ * Class FontAwesomeMinifyAsset
  */
-class FontAwesomeMinifyAsset extends AssetBundle
+class FontAwesomeMinifyAsset extends FontAwesomeAsset
 {
     /**
      * @inherit
      */
-    public $sourcePath = '@bower/fontawesome';
-
-    /**
-     * @inherit
-     */
     public $css = [
-	    'css/all.min.css'
-    ];
-    
-    /**
-     * @inherit
-     */
-    public $depends = [
-	    YiiAsset::class,
+        'css/all.min.css',
     ];
 }
