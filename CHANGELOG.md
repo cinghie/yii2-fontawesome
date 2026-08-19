@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## 1.5.0 - 2026-08-19
 
 ### Added
 - PHPUnit regression coverage for the standard and minified asset bundles.
@@ -20,6 +20,7 @@ All notable changes to this project will be documented in this file.
 - GitHub Actions are pinned to immutable commit SHAs.
 - CI explicitly configures Asset Packagist before resolving `bower-asset/*` dependencies.
 - Public asset classes use normalized formatting and concise documentation.
+- Composer metadata now uses the canonical HTTPS Gogodigital homepage.
 
 ### Removed
 - The unnecessary `YiiAsset` dependency; registering Font Awesome no longer pulls in Yii JavaScript or jQuery indirectly.
@@ -27,4 +28,5 @@ All notable changes to this project will be documented in this file.
 
 ### Compatibility notes
 - Applications that accidentally relied on `FontAwesomeAsset` to register `YiiAsset` must register `YiiAsset` explicitly where needed.
+- PHP versions older than 7.4 are no longer supported by the package metadata.
 - Font Awesome 6 is not included in the current compatibility contract.
