@@ -141,11 +141,13 @@ final class Yii2BestPracticesTest extends TestCase
         );
     }
 
-    public function testComposerDeclaresSupportedPhpRuntime(): void
+    public function testComposerDeclaresSupportedRuntimePolicy(): void
     {
         $composer = $this->readComposerJson();
 
         self::assertSame('>=7.4', $composer['require']['php'] ?? null);
+        self::assertSame('^2.0.14', $composer['require']['yiisoft/yii2'] ?? null);
+        self::assertSame('^5.15.4', $composer['require']['bower-asset/fontawesome'] ?? null);
     }
 
     /**
