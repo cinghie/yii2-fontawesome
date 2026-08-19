@@ -37,6 +37,11 @@
             "cinghie\\fontawesome\\tests\\": "tests/"
         }
     },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
     "scripts": {
         "test": "phpunit"
     }
