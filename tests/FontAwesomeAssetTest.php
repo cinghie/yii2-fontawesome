@@ -17,7 +17,7 @@ final class FontAwesomeAssetTest extends TestCase
     {
         $asset = new FontAwesomeAsset();
 
-        self::assertSame('@bower/fontawesome', $asset->sourcePath);
+        self::assertSame(Yii::getAlias('@bower/fontawesome'), $asset->sourcePath);
         self::assertSame(['css/all.css'], $asset->css);
         self::assertSame([], $asset->depends);
     }
@@ -26,7 +26,7 @@ final class FontAwesomeAssetTest extends TestCase
     {
         $asset = new FontAwesomeMinifyAsset();
 
-        self::assertSame('@bower/fontawesome', $asset->sourcePath);
+        self::assertSame(Yii::getAlias('@bower/fontawesome'), $asset->sourcePath);
         self::assertSame(['css/all.min.css'], $asset->css);
         self::assertSame([], $asset->depends);
     }
@@ -46,6 +46,8 @@ final class FontAwesomeAssetTest extends TestCase
         $assetPath = $runtimePath . '/assets';
         mkdir($assetPath, 0777, true);
 
+        $bowerPath = $this->resolveBowerPath();
+
         $application = new Application([
             'id' => 'yii2-fontawesome-tests',
             'basePath' => dirname(__DIR__),
@@ -57,6 +59,8 @@ final class FontAwesomeAssetTest extends TestCase
                 ],
             ],
         ]);
+
+        Yii::setAlias('@bower', $bowerPath);
 
         try {
             $view = new View();
@@ -77,6 +81,20 @@ final class FontAwesomeAssetTest extends TestCase
             Yii::$app = null;
             $this->removeDirectory($runtimePath);
         }
+    }
+
+    private function resolveBowerPath(): string
+    {
+        foreach ([
+            dirname(__DIR__) . '/vendor/bower',
+            dirname(__DIR__) . '/vendor/bower-asset',
+        ] as $path) {
+            if (is_dir($path . '/fontawesome')) {
+                return $path;
+            }
+        }
+
+        self::fail('Unable to locate the installed Font Awesome bower package.');
     }
 
     private function removeDirectory(string $path): void
