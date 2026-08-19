@@ -24,6 +24,11 @@ final class Yii2BestPracticesTest extends TestCase
         }
     }
 
+    public function testMinifiedBundleExtendsStandardBundle(): void
+    {
+        self::assertTrue(is_subclass_of(FontAwesomeMinifyAsset::class, FontAwesomeAsset::class));
+    }
+
     /**
      * `use Yii;` in non-namespaced files is a no-op / warning.
      * Namespaced files may import Yii only when they reference Yii::.
@@ -124,12 +129,7 @@ final class Yii2BestPracticesTest extends TestCase
 
     public function testComposerAutoloadPsr4(): void
     {
-        $composer = json_decode(
-            (string) file_get_contents(dirname(__DIR__) . '/composer.json'),
-            true,
-            512,
-            JSON_THROW_ON_ERROR
-        );
+        $composer = $this->readComposerJson();
 
         self::assertSame(
             ['cinghie\\fontawesome\\' => ''],
@@ -139,6 +139,24 @@ final class Yii2BestPracticesTest extends TestCase
             ['cinghie\\fontawesome\\tests\\' => 'tests/'],
             $composer['autoload-dev']['psr-4'] ?? null
         );
+    }
+
+    public function testComposerDeclaresSupportedPhpRuntime(): void
+    {
+        $composer = $this->readComposerJson();
+
+        self::assertSame('>=7.4', $composer['require']['php'] ?? null);
+    }
+
+    /**
+     * @return array<string, mixed>
+     */
+    private function readComposerJson(): array
+    {
+        $contents = file_get_contents(dirname(__DIR__) . '/composer.json');
+        self::assertNotFalse($contents);
+
+        return json_decode($contents, true, 512, JSON_THROW_ON_ERROR);
     }
 
     /**
