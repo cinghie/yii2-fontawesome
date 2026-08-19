@@ -1,41 +1,23 @@
 <?php
 
-/**
-* @copyright Copyright &copy; Gogodigital Srls
-* @company Gogodigital Srls - Wide ICT Solutions 
-* @website http://www.gogodigital.it
-* @github https://github.com/cinghie/yii2-fontawesome
-* @license BSD-3-Clause
-* @package yii2-fontawesome
-* @version 1.4.5
-*/
-
 namespace cinghie\fontawesome;
 
 use yii\web\AssetBundle;
-use yii\web\YiiAsset;
 
 /**
- * Class FontAwesomeAsset
+ * Font Awesome asset bundle.
  */
 class FontAwesomeAsset extends AssetBundle
 {
     /**
-     * @inherit
+     * @inheritDoc
      */
-	public $sourcePath = '@bower/fontawesome';
+    public $sourcePath = '@bower/fontawesome';
 
     /**
-     * @inherit
+     * @inheritDoc
      */
     public $css = [
-        'css/all.css'
-    ];
-    
-    /**
-     * @inherit
-     */
-    public $depends = [
-	    YiiAsset::class,
+        'css/all.css',
     ];
 }
