@@ -71,6 +71,9 @@ final class FontAwesomeAssetTest extends TestCase
             self::assertFileExists($bundle->basePath . '/css/all.css');
             self::assertFileExists($bundle->basePath . '/webfonts/fa-solid-900.woff2');
         } finally {
+            if ($application->has('errorHandler', true)) {
+                $application->getErrorHandler()->unregister();
+            }
             Yii::$app = null;
             $this->removeDirectory($runtimePath);
         }
