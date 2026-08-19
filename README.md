@@ -25,13 +25,13 @@ The preferred way to install this extension is through Composer.
 Either run
 
 ```
-php composer.phar require cinghie/yii2-fontawesome "^1.4.5"
+php composer.phar require cinghie/yii2-fontawesome "^1.5.0"
 ```
 
 or add this line to the require section of your `composer.json` file:
 
 ```
-"cinghie/yii2-fontawesome": "^1.4.5"
+"cinghie/yii2-fontawesome": "^1.5.0"
 ```
 
 ## Configuration
