@@ -28,7 +28,7 @@ or add this line to the require section of your `composer.json` file.
 Configuration
 -----------------
 
-Add in the view for normal CSS and JS
+Register the standard CSS asset bundle in your view:
 
 ```
 use cinghie\fontawesome\FontAwesomeAsset;
@@ -36,7 +36,7 @@ use cinghie\fontawesome\FontAwesomeAsset;
 FontAwesomeAsset::register($this);
 ```
 
-Add in the view for minify CSS and JS
+Register the minified CSS asset bundle in your view:
 
 ```
 use cinghie\fontawesome\FontAwesomeMinifyAsset;
@@ -47,5 +47,5 @@ FontAwesomeMinifyAsset::register($this);
 Versioning
 -----------------
 
- - Fontawesome 5: from version Release 1.4.3  
- - Fontawesome 4: last version Release 1.3.4
+- Font Awesome 5: from release 1.4.3
+- Font Awesome 4: last release 1.3.4
